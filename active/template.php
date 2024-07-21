@@ -29,6 +29,8 @@
       <h2 class="text-2xl font-semibold mb-2">Fundamentals of PHP</h2>
       <h4>Topics:</h4>
       <p></p>
+      <h4>Notes:</h4>
+      <p></p>
     </div>
   </div>
 </body>

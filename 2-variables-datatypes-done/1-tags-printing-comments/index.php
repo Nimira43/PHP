@@ -1,21 +1,17 @@
 <?php
-/*
-  VARIABLE RULES:
-  - All variables are prefixed with a dollar sign ($).
-  - They must start with a letter or an underscore.
-  - They cannot start with a number.
-  - They can only contain letters, numbers, and underscores.
-  - They are case sensitive. So, `$name` and `$Name` are two different variables.
-  */
+  echo 'Hello from PHP';
+  print 'This is a print statement but I carry on the same line and don\'t start a new line - hence why the echo below is using a <br />';
+  echo '<br />';
+  echo 'can', 'have', 'multiple', 'values', 'on', 'one', 'line' 
 
-/*
-  CONVENTIONS:
-  - Underscores: $server_name
-  - Camel Case: $serverName
-  - Pascal Case: $ServerName
-  - lowercase: $servername
+  // Single line comment
+
+  /*
+  Multi 
+  Line
+  Comment
   */
-?>
+?>  // No need to add ?> at the end of a php file if it is purely php. It needs ?> here because of the HTML below.
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,9 +31,7 @@
       font-weight: 300;
     }
   </style>
-  <title>
-    <Learn PHP'; ?>
-  </title>
+  <title><?php echo 'Learn PHP'; ?></title>
 </head>
 
 <body class="bg-[#111]">
@@ -50,9 +44,11 @@
     <div class="bg-[#87ceeb] text-[#111] rounded-lg shadow-md p-2">
       <h2 class="text-2xl font-semibold mb-2">Fundamentals of PHP</h2>
       <h4>Topics:</h4>
-      <p>Variables</p>
+      <p>Tags, printing, comments</p>
       <h4>Notes:</h4>
-      <p></p>
+      <p><?php echo 'Anything in the php tags comes from the server.'; ?></p>
+      <p><?= 'Shorthand php tag, without using echo and ;' ?></p>
+      <?= '<p>This HTML paragraph is within the shorthand php tags</p>' ?>
     </div>
   </div>
 </body>
